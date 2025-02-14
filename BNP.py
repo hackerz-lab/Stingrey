@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # Author: Marttin Saji (GitHub: @hackerz-lab)
-# Fake Subscription Prank Script v1.3.7
+# Subscription Script v1.3.7
 # Compatible with Kali Linux & Termux
 
 import random
@@ -160,11 +160,11 @@ def generate_fake_card():
 
 def loading_animation():
     animations = ["⣾⣽⣻⢿⡿⣟⣯⣷", "⠁⠂⠄⡀⢀⠠⠐⠈"]
-    for _ in range(3):
+    for _ in range(10):
         for i in range(len(animations[0])):
             sys.stdout.write(Fore.GREEN + "\rProcessing payment " + animations[0][i] + " ")
             sys.stdout.flush()
-            time.sleep(0.1)
+            time.sleep(3.0)
     print("\n")
 
 def main():
@@ -174,7 +174,7 @@ def main():
     password = input(Fore.CYAN + "[" + Fore.WHITE + "+" + Fore.CYAN + "]" + Fore.WHITE + " Enter your password: ")
     
     print(Fore.YELLOW + "\n[!] Encrypting credentials...")
-    time.sleep(1)
+    time.sleep(20)
     
     loading_animation()
     
