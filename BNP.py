@@ -160,11 +160,11 @@ def generate_fake_card():
 
 def loading_animation():
     animations = ["⣾⣽⣻⢿⡿⣟⣯⣷", "⠁⠂⠄⡀⢀⠠⠐⠈"]
-    for _ in range(10):
+    for _ in range(1):
         for i in range(len(animations[0])):
             sys.stdout.write(Fore.GREEN + "\rProcessing payment " + animations[0][i] + " ")
             sys.stdout.flush()
-            time.sleep(3.0)
+            time.sleep(40)
     print("\n")
 
 def main():
